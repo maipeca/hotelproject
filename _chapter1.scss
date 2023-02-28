@@ -1,0 +1,47 @@
+.chapter_1{
+    
+    background-image: url("imagenes/section1.jpg");
+    height: 75rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: center;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    justify-content:flex-end;
+    @media only screen and (max-width: 650px){height: auto; 
+        }
+    
+    .text_1{ width: 50%; 
+        
+        margin-top: 50px;
+       
+        @media only screen and (max-width: 700px){width: 80%;
+            font-size: $p; margin-top: 20rem;}
+    
+        h1{
+            font-size: $title;
+            font-family: $font_title;
+         }
+    
+
+    h3, h2{
+       margin-top: 2rem;
+        font-size: $p;
+        font-weight: 400;
+        font-family: open, sans-serif; 
+    }
+
+
+    button{
+        @include primary_btn;
+        margin-bottom: 55px;
+        margin-top: 50px;
+        margin-left: 0rem;
+        @media only screen and (max-width: 400px){ width: 12rem;
+            font-size:12px; padding: 5px;}
+        
+    }
+       
+    } }
+

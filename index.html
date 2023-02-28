@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/favicon.ico">
+    <title>BI Hotels</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+  <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+  <!--jquery-->
+
+  </head>
+
+
+
+  <body>
+
+    <header>
+        <nav>
+          <div class="log">
+            <img class="logo" src="imagenes/LOGO2.svg" alt="bi hotels">
+          </div>
+            
+              <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#benchmark">BENCHMARK</a></li>
+                <li><a href="#prices">PRICES</a></li>
+                <li><a href="#form">FORM</a></li>
+              </ul>
+        </nav>
+    </header>
+
+
+    <main>
+<!--CHAPTER1-->
+
+        <div class="chapter_1" id="home">
+           
+            <div class="text_1">
+              <h1>DO YOU WANT TO GET THE MOST OUT OF YOUR HOTEL'S REVENUE MANAGEMENT?</h1>
+              <h2>Power BI is the tool you need</h3>
+              <button>CONTACT</button>
+            </div>
+
+        </div>
+
+<!--CHAPTER2-->
+        <div class="chapter_2" >
+
+            <div class="text_2">
+              <h2>WHAT IS POWER BI?</h2>
+              <h3>It is an intelligent system that works with the company's data on a large scale, 
+                generating graphics of great value.</h3>
+            </div>
+
+              <div class="imagen_2-boy">
+                <img src="imagenes/image1.svg" alt="analitics" width="60%">
+              </div>
+
+        </div>
+
+<!--CHAPTER3-->
+        <div class="chapter_3" id="team">
+
+            <div class="text_3">
+              <h2>WHO ARE WE?</2>
+            </div>
+
+                <div class="bothdescription">
+
+                    <div class="description">
+                     <img src="imagenes/girl.jpg" alt="Carol" 
+                      max-width="200px" height="200px">
+                      <div class="desc">
+                      <h6>Lore Ipsum</h6>
+    
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                      </p>   
+                    </div>
+                    </div>
+
+                     <div class="description">
+                       <img src="imagenes/boy.jpg" alt="Menino" 
+                        max-width="200px" height="200px">
+                       <div class="desc">
+                        <h6>Lore Ipsum</h6>
+
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        </p>
+                    </div>
+                     </div>
+                  </div>
+         </div>
+
+
+
+<!--CHAPTER4-->
+
+        <div class="chapter_4" id="benchmark">
+
+              <h2>BENCHMARK</h2>
+              <h3>We study the competition and do an in-depth analysis of the best practices used by companies in the sector. Among its benefits are cost reduction,
+                 increased productivity and increased profit margin.</h3>
+
+             <img src="imagenes/statistics_computer.svg" alt="stadistica" width="30%"
+                      >
+
+        </div>
+
+
+
+<!--CHAPTER5-->
+        <div class="chapter_5" id="prices">
+          <h2>WHICH ARE THE PRICES?</h2>
+            <div class="two_columns">
+              <div class="columns">
+                <ul class="price">
+                 <li><img src="imagenes/home.svg" alt="standard" height="150px"></li>
+                  <li class="grey">225$/year</li>
+                  <li>Data reporting</li>
+                  <li>APIs all included</li>
+                  <li>Upgrades availables</li>
+                  <li>Standard support (8h)</li>
+                  <li>Limited data refresh per day</li>
+                  <li class="header">Standard</li>
+                 </ul>
+                </div>
+
+
+                <div class="columns">
+                  <ul class="price">
+                    <li><img src="imagenes/town.svg" alt="premium" height="150px"></li>
+                    <li class="grey">500$/year</li>
+                    <li>Real time</li>
+                    <li>Data reporting</li>
+                    <li>APIs all included</li>
+                    <li>Premium support (24h)</li>
+                    <li>Upgrades and maintainance</li>
+                    <li class="header">Premium</li>
+
+                   
+                   </ul>
+                 
+                </div>
+
+
+              </div>
+        </div>
+        
+       
+
+ <!--CHAPTER6-->
+ 
+ 
+     <div class="chapter_6" id="formulario">
+          <h2>FILL OUT THE FORM AND CONTACT WITH US</h2>
+         
+          <form id="form" method="post">
+
+             <div>
+                 <input type="text" name="name" id="nome" placeholder="Name" required>
+              </div>
+    
+              <div class="post__sobrenome">
+                <input type="text" name="surname" id="sobrenome" placeholder="Surname" required>
+              </div>
+    
+              <div class="post__email">
+                <input type="email" name="email" id="email" placeholder="Type your email" required>
+              </div>
+    
+              <div class="post__mensagem">
+                <textarea name="mensagem" id="message" rows="5" placeholder="Message"></textarea>
+              </div>
+    
+              <button type="submit" name="button">Contact</button>
+         </form>
+
+      </div>
+
+<!--MAP-->
+      <div class="map">
+
+        <h2>YOU CAN FIND US HERE</h2>
+        <div id="map">
+
+      </div>
+
+
+      </div>
+
+    </main>
+
+
+<!--FOOTER-->
+
+    <footer>
+      <ul class="info">
+        <li>Terms & Conditions </li>
+        <li>Privacy</li>
+        <li class="redes">Follow us</li>
+        <div class="logo">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        </div>
+      </ul>
+
+    </footer>
+    <script src="index.js"></script> 
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+  <script src="form.js"></script>
+  
+
+    </body>
+    
+</html>

@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+form .error {
+  color: red;
+  font-size: 1.2rem;
+  font-family: open, sans-serif;
+  margin-top: 3px;
+}
+
+#map {
+  height: 400px;
+  width: 50vw;
+  margin: 20px auto;
+  background-color: #afd275;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  margin-bottom: 4rem;
+  z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  #map {
+    margin: 10px auto;
+    width: 70%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #010B2E;
+  position: fixed;
+  display: flex;
+  width: 100%;
+}
+header .log {
+  display: block;
+  margin: 0 auto;
+}
+header .logo {
+  width: 200px;
+}
+header nav {
+  display: inline-flex;
+  align-items: center;
+  height: 12rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 1024px) {
+  header nav {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+}
+header nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding: 1rem 0rem 1rem 1rem;
+  gap: 2rem;
+  height: 7.6rem;
+  margin-right: 7rem;
+}
+@media only screen and (max-width: 1024px) {
+  header nav ul {
+    justify-content: center;
+    margin-right: 0px;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  header nav ul {
+    margin-top: 1rem;
+  }
+}
+header li {
+  list-style: none;
+}
+@media only screen and (max-width: 650px) {
+  header li {
+    padding: 0px;
+  }
+}
+header a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: Roboto Slab;
+  color: #FFFCFC;
+}
+@media only screen and (max-width: 650px) {
+  header a {
+    font-size: 10px;
+    margin: 1rem;
+  }
+}
+header img {
+  position: relative;
+}
+@media only screen and (max-width: 700px) {
+  header img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+header a:hover {
+  border-style: inset;
+  font-weight: bolder;
+}
+
+.chapter_1 {
+  background-image: url("imagenes/section1.jpg");
+  height: 75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 650px) {
+  .chapter_1 {
+    height: auto;
+  }
+}
+.chapter_1 .text_1 {
+  width: 50%;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 700px) {
+  .chapter_1 .text_1 {
+    width: 80%;
+    font-size: 1.4rem;
+    margin-top: 20rem;
+  }
+}
+.chapter_1 .text_1 h1 {
+  font-size: 1.8rem;
+  font-family: Roboto Slab;
+}
+.chapter_1 .text_1 h3, .chapter_1 .text_1 h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: open, sans-serif;
+}
+.chapter_1 .text_1 button {
+  background: #D0B049;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 2.2rem;
+  width: 14rem;
+  color: #050000;
+  border-radius: 41px;
+  font-family: open, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-top: 50px;
+  margin-left: 0rem;
+}
+.chapter_1 .text_1 button:hover {
+  background-color: #826C29;
+  color: white;
+}
+@media only screen and (max-width: 400px) {
+  .chapter_1 .text_1 button {
+    width: 12rem;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+.chapter_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 0rem 7rem 0rem;
+}
+.chapter_2 .text_2 {
+  text-align: center;
+  font-family: Roboto Slab;
+}
+.chapter_2 .text_2 h3 {
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin: 5rem 0rem;
+}
+
+.chapter_3 {
+  background-color: #EEEAFF;
+  padding: 10rem 0rem 7rem 0rem;
+  width: 100%;
+}
+.chapter_3 h2 {
+  font-family: Roboto Slab;
+  margin-bottom: 5rem;
+}
+.chapter_3 img {
+  border-radius: 30%;
+  object-fit: cover;
+}
+.chapter_3 .text_3 {
+  text-align: center;
+}
+.chapter_3 .bothdescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 499px;
+}
+@media only screen and (max-width: 933px) {
+  .chapter_3 .bothdescription {
+    display: block;
+    height: auto;
+  }
+}
+.chapter_3 .bothdescription img {
+  display: block;
+  margin: 0 auto;
+}
+.chapter_3 .bothdescription .description {
+  margin: 0 auto;
+  width: 100vw;
+}
+@media only screen and (max-width: 933px) {
+  .chapter_3 .bothdescription .description {
+    margin: 0 auto;
+    width: 100vw;
+  }
+}
+.chapter_3 .bothdescription .desc {
+  width: 30vw;
+  height: 14rem;
+  margin-top: 4rem;
+  margin: 4rem auto;
+  padding-top: 2rem;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .chapter_3 .bothdescription .desc {
+    width: 80vw;
+  }
+}
+.chapter_3 .bothdescription h6 {
+  font-size: 1.6rem;
+  font-family: Roboto Slab;
+  font-weight: 100;
+  text-align: center;
+}
+.chapter_3 .bothdescription p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem 4rem;
+  font-family: open, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .chapter_3 .bothdescription p {
+    font-size: 1.2rem;
+  }
+}
+
+.chapter_4 {
+  padding: 10rem 0rem 7rem 0rem;
+}
+.chapter_4 h2 {
+  text-align: center;
+}
+.chapter_4 h3 {
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+  margin: 5rem auto;
+  font-family: roboto slab;
+  max-width: 100%;
+}
+.chapter_4 img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 8vw;
+}
+
+.chapter_5 {
+  background-color: #010B2E;
+  padding: 10rem 0rem 7rem 0rem;
+  height: 90.9rem;
+}
+.chapter_5 h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 5rem;
+}
+.chapter_5 .two_columns {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.chapter_5 .columns {
+  width: 371px;
+  height: auto;
+  overflow: hidden; /*to hide the edge of the box*/
+}
+.chapter_5 .price {
+  list-style-type: none;
+}
+
+.columns {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: open, sans-serif;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.header {
+  text-align: center;
+  width: 200px;
+  font-size: 1.6rem;
+  font-family: Roboto Slab;
+  background-color: #EEEAFF;
+  margin: 2rem auto;
+  border-radius: 2.3rem;
+  margin-bottom: 4rem;
+}
+
+li {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: open, sans-serif;
+}
+
+.grey { /*This is the price*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.8rem;
+  color: #010B2E;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .two_columns {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  .columns {
+    margin-top: 2rem;
+  }
+  .chapter_5 {
+    height: auto;
+  }
+}
+.chapter_6 {
+  padding: 10rem 0rem 7rem 0rem;
+}
+.chapter_6 h2 {
+  text-align: center;
+  font-style: Roboto Slab;
+  margin-bottom: 5rem;
+}
+.chapter_6 .formulario {
+  width: 100vw;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .chapter_6 div {
+    width: 70vw;
+  }
+}
+.chapter_6 form {
+  width: 40vw;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .chapter_6 form {
+    width: 80vw;
+  }
+}
+.chapter_6 form div {
+  width: 100%;
+}
+.chapter_6 input, .chapter_6 textarea {
+  background: #EEEAFF;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 100%;
+  font-family: open, sans-serif;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+  background: #D0B049;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 2.2rem;
+  width: 14rem;
+  color: #050000;
+  border-radius: 41px;
+  font-family: open, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: block;
+}
+button:hover {
+  background-color: #826C29;
+  color: white;
+}
+@media only screen and (max-width: 400px) {
+  button {
+    width: 12rem;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+footer {
+  background-color: #010B2E;
+  color: #D0B049;
+}
+footer .info {
+  list-style: none;
+  display: inline-flex;
+  margin: 5rem 5rem;
+  font-family: open, sans-serif;
+}
+@media only screen and (max-width: 700px) {
+  footer .info {
+    margin: 0rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer .info {
+    display: block;
+  }
+}
+footer .info .logo {
+  display: flex;
+}
+@media only screen and (max-width: 400px) {
+  footer .info .logo {
+    display: flex;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer .info li {
+    font-size: 12px;
+  }
+}
+footer .fa {
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+  footer .fa {
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer .fa {
+    margin-left: 2rem;
+  }
+}
+footer .fa:hover {
+  opacity: 0.7;
+}
+
+.map {
+  padding: 10rem 0rem 7rem 0rem;
+}
+.map h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/*robotoslab normal*/
+
+/*# sourceMappingURL=style.css.map */

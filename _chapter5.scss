@@ -1,0 +1,77 @@
+
+.chapter_5{
+    background-color: $primary_color;
+    padding: $pd_chapter;
+    height: 90.9rem;
+
+h2{text-align: center;
+  color: white;
+  margin-bottom:5rem;
+}
+
+.two_columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+.columns{
+    width: 371px;
+    height: auto;
+    overflow: hidden;/*to hide the edge of the box*/}
+  
+  .price {
+    list-style-type: none;
+    
+   
+  }
+  
+  }
+  
+  .columns {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: $font_paragraph;
+    font-size: $title;
+    border-radius: 10px;
+    background: #FFFFFF;
+
+  }
+
+  .header{ 
+    text-align: center;
+    width: 200px;
+    font-size: $subtitle;
+    font-family: Roboto Slab;
+    background-color: #EEEAFF; 
+    margin: 2rem auto;
+    border-radius: 2.3rem;
+    margin-bottom: 4rem;
+    }
+  
+  li {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: $font_paragraph
+    }
+  
+  .grey{/*This is the price*/
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      font-style: italic;
+       font-size: $title;
+      color: $primary_color;
+      margin-bottom: 2rem;
+    
+    }
+    
+   
+
+    
+  @media only screen and (max-width: 900px) {
+    .two_columns {
+      flex: 1;flex-wrap: wrap;
+    }
+    .columns{margin-top: 2rem;}
+    .chapter_5{height: auto;}
+  }
